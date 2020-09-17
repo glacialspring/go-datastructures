@@ -272,6 +272,10 @@ func (sba *sparseBitArray) copy() *sparseBitArray {
 	}
 }
 
+func (sba *sparseBitArray) Copy() *sparseBitArray {
+	return sba.copy()
+}
+
 // Intersects returns a bool indicating if the provided bit array
 // intersects with this bitarray.
 func (sba *sparseBitArray) Intersects(other BitArray) bool {
