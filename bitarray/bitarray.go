@@ -279,6 +279,10 @@ func (ba *bitArray) copy() BitArray {
 	}
 }
 
+func (ba *bitArray) Copy() BitArray {
+	return ba.copy()
+}
+
 // newBitArray returns a new dense BitArray at the specified size. This is a
 // separate private constructor so unit tests don't have to constantly cast the
 // BitArray interface to the concrete type.
