@@ -272,7 +272,7 @@ func (sba *sparseBitArray) copy() *sparseBitArray {
 	}
 }
 
-func (sba *sparseBitArray) Copy() *sparseBitArray {
+func (sba *sparseBitArray) Copy() BitArray {
 	return sba.copy()
 }
 
