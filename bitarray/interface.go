@@ -56,7 +56,7 @@ type BitArray interface {
 	// seen capacity of the sparse array.
 	Capacity() uint64
 	// Copies efficiently by blocks.
-	Copy() uint64
+	Copy() BitArray
 	// Or will bitwise or the two bitarrays and return a new bitarray
 	// representing the result.
 	Or(other BitArray) BitArray
